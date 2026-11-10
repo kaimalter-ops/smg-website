@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tourtermine 2027 – Spider Murphy Gang</title>
+<style>
+@font-face{font-family:'Anton';src:url(fonts/anton.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Yellowtail';src:url(fonts/yellowtail.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-500.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-700.woff2) format('woff2');font-weight:700;font-display:swap}
+</style>
+<style>
+body{margin:0;background:#070a17}
+a{color:#ffd23f;text-decoration:none}a:hover{color:#fff3b8}
+.neon a{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.06em;color:#e9edf5;transition:color .2s,text-shadow .2s}
+.neon a:nth-child(odd):hover,.neon a:nth-child(odd):focus-visible{color:#ffd23f;text-shadow:0 0 3px #fff3b8,0 0 10px rgba(255,210,63,1),0 0 22px rgba(255,190,0,.9),0 0 40px rgba(255,170,0,.6)}
+.neon a:nth-child(even):hover,.neon a:nth-child(even):focus-visible{color:#4fb3ff;text-shadow:0 0 3px #d6ecff,0 0 10px rgba(79,179,255,1),0 0 22px rgba(30,140,255,.9),0 0 40px rgba(0,110,255,.6)}
+.neon a[aria-current=page]{color:#ffd23f}
+.btn-red[aria-disabled]:hover{background:#c8102e !important}
+.btn-red:hover{background:#e0213f !important}
+.btn-ghost:hover{border-color:#ffd23f !important;color:#ffd23f !important}
+.row:hover{background:rgba(255,210,63,.06) !important}
+.tile:hover{border-color:rgba(255,210,63,.6) !important}
+@media (max-width:760px){.hero{display:block !important;min-height:0 !important}.hero-img{position:relative !important;height:auto !important;aspect-ratio:16/10}.hero-shade{display:none}.hero-text{padding-top:28px !important}}
+</style>
+<style>
+.legal h1{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(38px,6vw,60px);line-height:1;margin:0 0 32px;color:#fff;letter-spacing:.01em;hyphens:auto}
+.legal h2{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:28px;margin:48px 0 14px;color:#ffd23f;letter-spacing:.02em}
+.legal h3{font-size:20px;margin:30px 0 10px;color:#fff}
+.legal h4{font-size:17px;margin:22px 0 8px;color:#e9edf5}
+.legal p,.legal li{font-size:16px;line-height:1.7;color:#c9d1de}
+.legal p{margin:0 0 14px}
+.legal ul{margin:0 0 14px;padding-left:22px}
+.legal a{color:#4fb3ff;text-decoration:underline;word-break:break-word}
+.legal a:hover{color:#9ed3ff}
+</style>
+<style>
+.disc-card{display:flex;flex-wrap:wrap;gap:22px;padding:22px;border:1px solid rgba(215,221,229,.14);border-radius:18px;background:#0b0f20;scroll-margin-top:96px;transition:border-color .2s}
+.disc-card:target,.disc-card:hover{border-color:rgba(255,210,63,.55)}
+.disc-cover{flex:0 0 150px;width:150px;height:150px;border-radius:10px;object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.disc-body{flex:1 1 220px;min-width:0}
+.disc-body h3{margin:0;font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:24px;line-height:1.1;text-transform:uppercase;color:#fff;letter-spacing:.01em}
+.disc-meta{margin:8px 0 0;font-size:14px;color:#ffd23f}
+.disc-meta span{color:#a9b3c4}
+.disc-body details{margin-top:14px}
+.disc-body summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#e9edf5;padding:9px 16px;border:1px solid rgba(233,237,245,.3);border-radius:999px;min-height:40px;box-sizing:border-box}
+.disc-body summary::-webkit-details-marker{display:none}
+.disc-body summary::after{content:"+";color:#ffd23f;font-size:18px;line-height:1}
+.disc-body details[open] summary::after{content:"–"}
+.disc-body summary:hover{border-color:#ffd23f;color:#ffd23f}
+.disc-body ol{margin:16px 0 0;padding-left:26px;columns:2;column-gap:28px;font-size:14px;line-height:1.75;color:#c9d1de}
+.disc-body ol li{break-inside:avoid}
+.disc-body ol li::marker{color:#6f7a90;font-size:12px}
+.disc-body .bonus{list-style:none;margin:6px 0 0 -26px;color:#ff5c8a;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.decade-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border:1px solid rgba(233,237,245,.3);border-radius:999px;color:#e9edf5;font-family:'Anton',Impact,sans-serif;font-size:18px;letter-spacing:.06em}
+.decade-nav a:nth-child(odd):hover{color:#ffd23f;border-color:#ffd23f;text-shadow:0 0 10px rgba(255,210,63,.9)}
+.decade-nav a:nth-child(even):hover{color:#4fb3ff;border-color:#4fb3ff;text-shadow:0 0 10px rgba(79,179,255,.9)}
+@media (max-width:760px){.mhero-text{position:static !important;padding-top:20px !important;padding-bottom:0 !important}.mhero-shade{display:none}}
+@media (max-width:560px){.disc-cover{flex-basis:110px;width:110px;height:110px}.disc-body ol{columns:1}}
+</style>
+</head>
+<body>
+<div style="font-family: 'DM Sans', system-ui, sans-serif; color: #e9edf5; background: #070a17; width: 100%; overflow-x: hidden;">
+
+<!-- Navigation -->
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(7,10,23,.86); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(215,221,229,.12);">
+<nav class="neon" aria-label="Hauptmenü" style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 40px; font-size: 20px;">
+<a href="index.html">Startseite</a>
+<a href="tour.html" aria-current="page">Tour</a>
+<a href="index.html#box">Die Box</a>
+<a href="live.html">Live</a>
+<a href="index.html#band">Band</a>
+<a href="musik.html">Musik</a>
+<a href="index.html#kontakt">Booking</a>
+</nav>
+</header>
+
+<section class="mhero" style="position: relative;">
+<img class="mhero-img" src="bilder/tour-titel.jpg" alt="Die Spider Murphy Gang hängt im Diner das Banner „50 Jahre Skandal“ auf, davor Flightcases" width="1914" height="822" style="display: block; width: 100%; height: auto; aspect-ratio: 21 / 9; object-fit: cover;">
+<div class="mhero-shade" aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,10,23,0) 80%, #070a17 100%);"></div>
+</section>
+<div style="max-width: 1040px; margin: 0 auto; padding: 28px 24px 0; box-sizing: border-box;">
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: 56px; line-height: 1; color: #ffd23f; text-shadow: 0 0 6px rgba(255,210,63,.8), 0 0 22px rgba(255,190,0,.55);">On Tour</p>
+<h1 style="margin: 10px 0 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 7vw, 84px); line-height: .95; text-transform: uppercase; color: #ffffff; text-shadow: 0 4px 24px rgba(0,0,0,.6);">50 Jahre Rock'n'Roll – 2027</h1>
+</div>
+<main style="max-width: 1040px; margin: 0 auto; padding: 32px 24px 104px;">
+<p style="margin: 0; max-width: 700px; font-size: 18px; line-height: 1.7; color: #c9d1de;">42 Konzerte zum 50-jährigen Jubiläum – unplugged im Münchner Lustspielhaus, elektrisch in ganz Deutschland, 6× in Österreich und 1× in der Schweiz, im Sommer unter freiem Himmel. Das große Finale steigt am 30. und 31. Oktober 2027 in der Münchner Olympiahalle.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px;">
+<a class="btn-red" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="background: #c8102e; color: #ffffff; padding: 15px 26px; border-radius: 999px; font-weight: 700; font-size: 16px;">Tickets bei Eventim</a>
+<a class="btn-ghost" href="https://www.oeticket.com/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-rocknroll-4129350/" style="border: 2px solid rgba(233,237,245,.4); color: #ffffff; padding: 13px 24px; border-radius: 999px; font-weight: 700; font-size: 16px;">Österreich: oeticket</a>
+</div>
+<nav class="decade-nav" aria-label="Monate" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px;">
+<a href="#monat-2027-03">März</a><a href="#monat-2027-04">April</a><a href="#monat-2027-05">Mai</a><a href="#monat-2027-06">Juni</a><a href="#monat-2027-07">Juli</a><a href="#monat-2027-08">August</a><a href="#monat-2027-10">Oktober</a>
+</nav>
+<section id="monat-2027-03" style="scroll-margin-top: 90px; margin-top: 56px;">
+<h2 style="margin: 0 0 18px; display: flex; align-items: baseline; gap: 14px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px; text-transform: uppercase; color: #ffffff;">März 2027 <span style="font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; text-transform: none; color: #a9b3c4;">3 Konzerte</span></h2>
+<div style="border: 1px solid rgba(215,221,229,.18); border-radius: 18px; overflow: hidden; background: rgba(12,16,32,.75);">
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">27.03.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">München</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Lustspielhaus</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #4fb3ff55; color: #4fb3ff; font-size: 12px; font-weight: 700; letter-spacing: .04em;">unplugged</span></div>
+</div>
+<a class="btn-ghost" href="https://lustspielhaus.de/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">28.03.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">München</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Lustspielhaus</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #4fb3ff55; color: #4fb3ff; font-size: 12px; font-weight: 700; letter-spacing: .04em;">unplugged</span></div>
+</div>
+<a class="btn-ghost" href="https://lustspielhaus.de/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">29.03.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Mo</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">München</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Lustspielhaus</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #4fb3ff55; color: #4fb3ff; font-size: 12px; font-weight: 700; letter-spacing: .04em;">unplugged</span></div>
+</div>
+<a class="btn-ghost" href="https://lustspielhaus.de/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+</div>
+</section>
+<section id="monat-2027-04" style="scroll-margin-top: 90px; margin-top: 56px;">
+<h2 style="margin: 0 0 18px; display: flex; align-items: baseline; gap: 14px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px; text-transform: uppercase; color: #ffffff;">April 2027 <span style="font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; text-transform: none; color: #a9b3c4;">12 Konzerte</span></h2>
+<div style="border: 1px solid rgba(215,221,229,.18); border-radius: 18px; overflow: hidden; background: rgba(12,16,32,.75);">
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">03.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Landshut</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Sparkassen-Arena</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">04.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Landshut</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Sparkassen-Arena</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ff5c8a55; color: #ff5c8a; font-size: 12px; font-weight: 700; letter-spacing: .04em;">Zusatzkonzert</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">09.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Fr</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Kassel</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Kongress Palais - Stadthalle</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.reservix.de/tickets-spider-murphy-gang-50-jahre-rockn-roll-jubilaeumskonzert-in-kassel-stadthalle-am-9-4-2027/e2548515" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">10.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Bochum</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">RuhrCongress</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">11.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Köln</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">E-Werk</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">17.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Berlin</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">ASTRA Kulturhaus</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">18.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Hamburg</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Große Freiheit 36</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">19.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Mo</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Hannover</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Capitol</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=EYA" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">22.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Do</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Regensburg</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Das Stadtwerk.Donau-Arena</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">24.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Bayreuth</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Oberfrankenhalle</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">29.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Do</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Innsbruck <span style="font-size: 12px; font-weight: 700; color: #a9b3c4; border: 1px solid rgba(169,179,196,.4); border-radius: 4px; padding: 1px 5px; vertical-align: 2px;">AT</span></p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Congress - Saal Dogana</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.oeticket.com/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-rocknroll-4129350/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">30.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Fr</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Klagenfurt <span style="font-size: 12px; font-weight: 700; color: #a9b3c4; border: 1px solid rgba(169,179,196,.4); border-radius: 4px; padding: 1px 5px; vertical-align: 2px;">AT</span></p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Messe-Arena 5</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.oeticket.com/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-rocknroll-4129350/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+</div>
+</section>
+<section id="monat-2027-05" style="scroll-margin-top: 90px; margin-top: 56px;">
+<h2 style="margin: 0 0 18px; display: flex; align-items: baseline; gap: 14px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px; text-transform: uppercase; color: #ffffff;">Mai 2027 <span style="font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; text-transform: none; color: #a9b3c4;">5 Konzerte</span></h2>
+<div style="border: 1px solid rgba(215,221,229,.18); border-radius: 18px; overflow: hidden; background: rgba(12,16,32,.75);">
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">01.05.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Graz <span style="font-size: 12px; font-weight: 700; color: #a9b3c4; border: 1px solid rgba(169,179,196,.4); border-radius: 4px; padding: 1px 5px; vertical-align: 2px;">AT</span></p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Stefaniensaal - Congress Graz</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.oeticket.com/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-rocknroll-4129350/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">14.05.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Fr</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Wien <span style="font-size: 12px; font-weight: 700; color: #a9b3c4; border: 1px solid rgba(169,179,196,.4); border-radius: 4px; padding: 1px 5px; vertical-align: 2px;">AT</span></p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Globe Wien - Marx Halle</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.oeticket.com/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-rocknroll-4129350/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">16.05.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Waidhofen/Ybbs <span style="font-size: 12px; font-weight: 700; color: #a9b3c4; border: 1px solid rgba(169,179,196,.4); border-radius: 4px; padding: 1px 5px; vertical-align: 2px;">AT</span></p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Hollatza Musikfestival</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://shop.ticketwall.at/webshop/webticket/bestseatselect?eventId=162&amp;el=true" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">22.05.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Willingen-Usseln</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Schützenhalle</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.sg-usseln.de/tickets" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">23.05.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Bad Zwischenahn</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Park der Gärten</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://zugastimpark.reservix.de/p/reservix/event/2556533" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+</div>
+</section>
+<section id="monat-2027-06" style="scroll-margin-top: 90px; margin-top: 56px;">
+<h2 style="margin: 0 0 18px; display: flex; align-items: baseline; gap: 14px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px; text-transform: uppercase; color: #ffffff;">Juni 2027 <span style="font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; text-transform: none; color: #a9b3c4;">2 Konzerte</span></h2>
+<div style="border: 1px solid rgba(215,221,229,.18); border-radius: 18px; overflow: hidden; background: rgba(12,16,32,.75);">
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">06.06.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Meersburg</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Schlossplatz</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #7ee08155; color: #7ee081; font-size: 12px; font-weight: 700; letter-spacing: .04em;">Open Air</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-schlossplatz-meersburg-21602791/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">19.06.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Traunstein</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Stadtplatz</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+</div>
+</section>
+<section id="monat-2027-07" style="scroll-margin-top: 90px; margin-top: 56px;">
+<h2 style="margin: 0 0 18px; display: flex; align-items: baseline; gap: 14px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px; text-transform: uppercase; color: #ffffff;">Juli 2027 <span style="font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; text-transform: none; color: #a9b3c4;">6 Konzerte</span></h2>
+<div style="border: 1px solid rgba(215,221,229,.18); border-radius: 18px; overflow: hidden; background: rgba(12,16,32,.75);">
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">04.07.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Augst <span style="font-size: 12px; font-weight: 700; color: #a9b3c4; border: 1px solid rgba(169,179,196,.4); border-radius: 4px; padding: 1px 5px; vertical-align: 2px;">CH</span></p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Augusta Raurica</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #7ee08155; color: #7ee081; font-size: 12px; font-weight: 700; letter-spacing: .04em;">Open Air</span></div>
+</div>
+<span style="padding: 10px 4px; font-size: 13px; color: #8e98ab;">Tickets folgen</span>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">17.07.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Rehling</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Schloss Scherneck</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #7ee08155; color: #7ee081; font-size: 12px; font-weight: 700; letter-spacing: .04em;">Open Air</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-schloss-scherneck-22067560/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">18.07.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Benediktbeuern</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Kloster Benediktbeuern</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">23.07.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Fr</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Freiburg</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">ZMF Festival</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://zmf.reservix.de/p/reservix/event/2618077" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">24.07.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Hirschberg</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Schloss</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #7ee08155; color: #7ee081; font-size: 12px; font-weight: 700; letter-spacing: .04em;">Open Air</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-schloss-leutershausen-22278718/?affiliate=EYA" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">30.07.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Fr</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Gmunden <span style="font-size: 12px; font-weight: 700; color: #a9b3c4; border: 1px solid rgba(169,179,196,.4); border-radius: 4px; padding: 1px 5px; vertical-align: 2px;">AT</span></p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Salzkammergut Festwochen</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://tickets.festwochen-gmunden.at/events/spider-murphy-gang-84b56q" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+</div>
+</section>
+<section id="monat-2027-08" style="scroll-margin-top: 90px; margin-top: 56px;">
+<h2 style="margin: 0 0 18px; display: flex; align-items: baseline; gap: 14px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px; text-transform: uppercase; color: #ffffff;">August 2027 <span style="font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; text-transform: none; color: #a9b3c4;">5 Konzerte</span></h2>
+<div style="border: 1px solid rgba(215,221,229,.18); border-radius: 18px; overflow: hidden; background: rgba(12,16,32,.75);">
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">01.08.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Schwarzenfeld</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Schlosspark</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #7ee08155; color: #7ee081; font-size: 12px; font-weight: 700; letter-spacing: .04em;">Open Air</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-schlosspark-schwarzenfeld-22010758/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">08.08.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Schwarzenberg</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Waldbühne</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #7ee08155; color: #7ee081; font-size: 12px; font-weight: 700; letter-spacing: .04em;">Open Air</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-waldbuehne-schwarzenberg-22255652/?affiliate=EYA" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">12.08.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Do</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Bad Nauheim</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Trinkuranlage</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.reservix.de/p/reservix/event/2604481" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">13.08.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Fr</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Würselen</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Burg Wilhelmstein</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-burg-wilhelmstein-freilichtbuehne-22203363/?affiliate=EYA" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">14.08.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Saarburg</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Kaserne</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #7ee08155; color: #7ee081; font-size: 12px; font-weight: 700; letter-spacing: .04em;">Open Air</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-kaserne-open-air-22355402/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+</div>
+</section>
+<section id="monat-2027-10" style="scroll-margin-top: 90px; margin-top: 56px;">
+<h2 style="margin: 0 0 18px; display: flex; align-items: baseline; gap: 14px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px; text-transform: uppercase; color: #ffffff;">Oktober 2027 <span style="font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; text-transform: none; color: #a9b3c4;">9 Konzerte</span></h2>
+<div style="border: 1px solid rgba(215,221,229,.18); border-radius: 18px; overflow: hidden; background: rgba(12,16,32,.75);">
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">01.10.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Fr</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Stuttgart</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Liederhalle Beethovensaal</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">02.10.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Balingen</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Volksbankmesse</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">03.10.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Mannheim</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Rosengarten Mozartsaal</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">15.10.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Fr</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Nürnberg</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Meistersingerhalle</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">16.10.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Bamberg</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">brose ARENA</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">17.10.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Frankfurt</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Batschkapp</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); ">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">20.10.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Mi</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Passau</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Dreiländerhalle</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); background: linear-gradient(90deg, rgba(200,16,46,.30), rgba(200,16,46,.06));">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">30.10.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">München</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Olympiahalle</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10); background: linear-gradient(90deg, rgba(200,16,46,.30), rgba(200,16,46,.06));">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">31.10.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">München</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Olympiahalle</p>
+<div><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ffd23f55; color: #ffd23f; font-size: 12px; font-weight: 700; letter-spacing: .04em;">elektrisch</span><span style="display: inline-block; margin: 6px 6px 0 0; padding: 3px 10px; border-radius: 999px; border: 1px solid #ff5c8a55; color: #ff5c8a; font-size: 12px; font-weight: 700; letter-spacing: .04em;">Zusatzkonzert</span></div>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+</div>
+</section>
+<p style="margin: 40px 0 0; font-size: 14px; color: #8e98ab;">Alle Angaben ohne Gewähr. Tickets gibt es über die verlinkten Vorverkaufsstellen.</p>
+</main>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (München)", "startDate": "2027-03-27", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Lustspielhaus", "address": {"@type": "PostalAddress", "addressLocality": "München", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://lustspielhaus.de/", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (München)", "startDate": "2027-03-28", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Lustspielhaus", "address": {"@type": "PostalAddress", "addressLocality": "München", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://lustspielhaus.de/", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (München)", "startDate": "2027-03-29", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Lustspielhaus", "address": {"@type": "PostalAddress", "addressLocality": "München", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://lustspielhaus.de/", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Landshut)", "startDate": "2027-04-03", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Sparkassen-Arena", "address": {"@type": "PostalAddress", "addressLocality": "Landshut", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Landshut)", "startDate": "2027-04-04", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Sparkassen-Arena", "address": {"@type": "PostalAddress", "addressLocality": "Landshut", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Kassel)", "startDate": "2027-04-09", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Kongress Palais - Stadthalle", "address": {"@type": "PostalAddress", "addressLocality": "Kassel", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.reservix.de/tickets-spider-murphy-gang-50-jahre-rockn-roll-jubilaeumskonzert-in-kassel-stadthalle-am-9-4-2027/e2548515", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Bochum)", "startDate": "2027-04-10", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "RuhrCongress", "address": {"@type": "PostalAddress", "addressLocality": "Bochum", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Köln)", "startDate": "2027-04-11", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "E-Werk", "address": {"@type": "PostalAddress", "addressLocality": "Köln", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Berlin)", "startDate": "2027-04-17", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "ASTRA Kulturhaus", "address": {"@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Hamburg)", "startDate": "2027-04-18", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Große Freiheit 36", "address": {"@type": "PostalAddress", "addressLocality": "Hamburg", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Hannover)", "startDate": "2027-04-19", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Capitol", "address": {"@type": "PostalAddress", "addressLocality": "Hannover", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=EYA", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Regensburg)", "startDate": "2027-04-22", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Das Stadtwerk.Donau-Arena", "address": {"@type": "PostalAddress", "addressLocality": "Regensburg", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Bayreuth)", "startDate": "2027-04-24", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Oberfrankenhalle", "address": {"@type": "PostalAddress", "addressLocality": "Bayreuth", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Innsbruck)", "startDate": "2027-04-29", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Congress - Saal Dogana", "address": {"@type": "PostalAddress", "addressLocality": "Innsbruck", "addressCountry": "AT"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.oeticket.com/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-rocknroll-4129350/", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Klagenfurt)", "startDate": "2027-04-30", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Messe-Arena 5", "address": {"@type": "PostalAddress", "addressLocality": "Klagenfurt", "addressCountry": "AT"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.oeticket.com/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-rocknroll-4129350/", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Graz)", "startDate": "2027-05-01", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Stefaniensaal - Congress Graz", "address": {"@type": "PostalAddress", "addressLocality": "Graz", "addressCountry": "AT"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.oeticket.com/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-rocknroll-4129350/", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Wien)", "startDate": "2027-05-14", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Globe Wien - Marx Halle", "address": {"@type": "PostalAddress", "addressLocality": "Wien", "addressCountry": "AT"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.oeticket.com/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-rocknroll-4129350/", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Waidhofen/Ybbs)", "startDate": "2027-05-16", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Hollatza Musikfestival", "address": {"@type": "PostalAddress", "addressLocality": "Waidhofen/Ybbs", "addressCountry": "AT"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://shop.ticketwall.at/webshop/webticket/bestseatselect?eventId=162&el=true", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Willingen-Usseln)", "startDate": "2027-05-22", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Schützenhalle", "address": {"@type": "PostalAddress", "addressLocality": "Willingen-Usseln", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.sg-usseln.de/tickets", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Bad Zwischenahn)", "startDate": "2027-05-23", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Park der Gärten", "address": {"@type": "PostalAddress", "addressLocality": "Bad Zwischenahn", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://zugastimpark.reservix.de/p/reservix/event/2556533", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Meersburg)", "startDate": "2027-06-06", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Schlossplatz", "address": {"@type": "PostalAddress", "addressLocality": "Meersburg", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-schlossplatz-meersburg-21602791/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Traunstein)", "startDate": "2027-06-19", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Stadtplatz", "address": {"@type": "PostalAddress", "addressLocality": "Traunstein", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Augst)", "startDate": "2027-07-04", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Augusta Raurica", "address": {"@type": "PostalAddress", "addressLocality": "Augst", "addressCountry": "CH"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Rehling)", "startDate": "2027-07-17", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Schloss Scherneck", "address": {"@type": "PostalAddress", "addressLocality": "Rehling", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-schloss-scherneck-22067560/", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Benediktbeuern)", "startDate": "2027-07-18", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Kloster Benediktbeuern", "address": {"@type": "PostalAddress", "addressLocality": "Benediktbeuern", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Freiburg)", "startDate": "2027-07-23", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "ZMF Festival", "address": {"@type": "PostalAddress", "addressLocality": "Freiburg", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://zmf.reservix.de/p/reservix/event/2618077", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Hirschberg)", "startDate": "2027-07-24", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Schloss", "address": {"@type": "PostalAddress", "addressLocality": "Hirschberg", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-schloss-leutershausen-22278718/?affiliate=EYA", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Gmunden)", "startDate": "2027-07-30", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Salzkammergut Festwochen", "address": {"@type": "PostalAddress", "addressLocality": "Gmunden", "addressCountry": "AT"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://tickets.festwochen-gmunden.at/events/spider-murphy-gang-84b56q", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Schwarzenfeld)", "startDate": "2027-08-01", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Schlosspark", "address": {"@type": "PostalAddress", "addressLocality": "Schwarzenfeld", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-schlosspark-schwarzenfeld-22010758/", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Schwarzenberg)", "startDate": "2027-08-08", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Waldbühne", "address": {"@type": "PostalAddress", "addressLocality": "Schwarzenberg", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-waldbuehne-schwarzenberg-22255652/?affiliate=EYA", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Bad Nauheim)", "startDate": "2027-08-12", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Trinkuranlage", "address": {"@type": "PostalAddress", "addressLocality": "Bad Nauheim", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.reservix.de/p/reservix/event/2604481", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Würselen)", "startDate": "2027-08-13", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Burg Wilhelmstein", "address": {"@type": "PostalAddress", "addressLocality": "Würselen", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-burg-wilhelmstein-freilichtbuehne-22203363/?affiliate=EYA", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Saarburg)", "startDate": "2027-08-14", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Kaserne", "address": {"@type": "PostalAddress", "addressLocality": "Saarburg", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/event/spider-murphy-gang-50-jahre-jubilaeumskonzerte-kaserne-open-air-22355402/", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Stuttgart)", "startDate": "2027-10-01", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Liederhalle Beethovensaal", "address": {"@type": "PostalAddress", "addressLocality": "Stuttgart", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Balingen)", "startDate": "2027-10-02", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Volksbankmesse", "address": {"@type": "PostalAddress", "addressLocality": "Balingen", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Mannheim)", "startDate": "2027-10-03", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Rosengarten Mozartsaal", "address": {"@type": "PostalAddress", "addressLocality": "Mannheim", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Nürnberg)", "startDate": "2027-10-15", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Meistersingerhalle", "address": {"@type": "PostalAddress", "addressLocality": "Nürnberg", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Bamberg)", "startDate": "2027-10-16", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "brose ARENA", "address": {"@type": "PostalAddress", "addressLocality": "Bamberg", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Frankfurt)", "startDate": "2027-10-17", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Batschkapp", "address": {"@type": "PostalAddress", "addressLocality": "Frankfurt", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (Passau)", "startDate": "2027-10-20", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Dreiländerhalle", "address": {"@type": "PostalAddress", "addressLocality": "Passau", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (München)", "startDate": "2027-10-30", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Olympiahalle", "address": {"@type": "PostalAddress", "addressLocality": "München", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}, {"@context": "https://schema.org", "@type": "MusicEvent", "name": "Spider Murphy Gang – 50 Jahre Rock'n'Roll (München)", "startDate": "2027-10-31", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Olympiahalle", "address": {"@type": "PostalAddress", "addressLocality": "München", "addressCountry": "DE"}}, "performer": {"@type": "MusicGroup", "name": "Spider Murphy Gang"}, "offers": {"@type": "Offer", "url": "https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD", "availability": "https://schema.org/InStock"}}]</script>
+
+<!-- Footer -->
+<div aria-hidden="true" style="height: 18px; background: repeating-conic-gradient(#e9edf5 0 25%, #0c0f1c 0 50%) 0 0 / 18px 18px; opacity: .7;"></div>
+<footer style="background: #04060f; padding: 44px 24px 36px;">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px; font-size: 14px; color: #8e98ab;">
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: 30px; color: #ffd23f;">Spider Murphy Gang</p>
+<nav class="neon" aria-label="Rechtliches" style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 16px;">
+<a href="impressum.html">Impressum</a>
+<a href="datenschutz.html">Datenschutz</a>
+<a href="cookies.html">Cookies</a>
+</nav>
+</div>
+<div style="max-width: 1240px; margin: 28px auto 0; padding-top: 22px; border-top: 1px solid rgba(215,221,229,.10); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; font-size: 13px; color: #8e98ab;">
+<p style="margin: 0;">Fotos © Dieter Bichl</p>
+<a href="https://codenovalabs.net" style="display: inline-flex; align-items: center; gap: 12px; color: #8e98ab;" aria-label="Website von CodeNova Labs">
+<span>Website by</span>
+<img src="bilder/codenova-labs.svg" alt="CodeNova Labs" style="height: 38px; width: auto; display: block;">
+</a>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

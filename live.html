@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Live – Spider Murphy Gang</title>
+<style>
+@font-face{font-family:'Anton';src:url(fonts/anton.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Yellowtail';src:url(fonts/yellowtail.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-500.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-700.woff2) format('woff2');font-weight:700;font-display:swap}
+</style>
+<style>
+body{margin:0;background:#070a17}
+a{color:#ffd23f;text-decoration:none}a:hover{color:#fff3b8}
+.neon a{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.06em;color:#e9edf5;transition:color .2s,text-shadow .2s}
+.neon a:nth-child(odd):hover,.neon a:nth-child(odd):focus-visible{color:#ffd23f;text-shadow:0 0 3px #fff3b8,0 0 10px rgba(255,210,63,1),0 0 22px rgba(255,190,0,.9),0 0 40px rgba(255,170,0,.6)}
+.neon a:nth-child(even):hover,.neon a:nth-child(even):focus-visible{color:#4fb3ff;text-shadow:0 0 3px #d6ecff,0 0 10px rgba(79,179,255,1),0 0 22px rgba(30,140,255,.9),0 0 40px rgba(0,110,255,.6)}
+.neon a[aria-current=page]{color:#ffd23f}
+.btn-red[aria-disabled]:hover{background:#c8102e !important}
+.btn-red:hover{background:#e0213f !important}
+.btn-ghost:hover{border-color:#ffd23f !important;color:#ffd23f !important}
+.row:hover{background:rgba(255,210,63,.06) !important}
+.tile:hover{border-color:rgba(255,210,63,.6) !important}
+@media (max-width:760px){.hero{display:block !important;min-height:0 !important}.hero-img{position:relative !important;height:auto !important;aspect-ratio:16/10}.hero-shade{display:none}.hero-text{padding-top:28px !important}}
+</style>
+<style>
+.legal h1{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(38px,6vw,60px);line-height:1;margin:0 0 32px;color:#fff;letter-spacing:.01em;hyphens:auto}
+.legal h2{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:28px;margin:48px 0 14px;color:#ffd23f;letter-spacing:.02em}
+.legal h3{font-size:20px;margin:30px 0 10px;color:#fff}
+.legal h4{font-size:17px;margin:22px 0 8px;color:#e9edf5}
+.legal p,.legal li{font-size:16px;line-height:1.7;color:#c9d1de}
+.legal p{margin:0 0 14px}
+.legal ul{margin:0 0 14px;padding-left:22px}
+.legal a{color:#4fb3ff;text-decoration:underline;word-break:break-word}
+.legal a:hover{color:#9ed3ff}
+</style>
+<style>
+.disc-card{display:flex;flex-wrap:wrap;gap:22px;padding:22px;border:1px solid rgba(215,221,229,.14);border-radius:18px;background:#0b0f20;scroll-margin-top:96px;transition:border-color .2s}
+.disc-card:target,.disc-card:hover{border-color:rgba(255,210,63,.55)}
+.disc-cover{flex:0 0 150px;width:150px;height:150px;border-radius:10px;object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.disc-body{flex:1 1 220px;min-width:0}
+.disc-body h3{margin:0;font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:24px;line-height:1.1;text-transform:uppercase;color:#fff;letter-spacing:.01em}
+.disc-meta{margin:8px 0 0;font-size:14px;color:#ffd23f}
+.disc-meta span{color:#a9b3c4}
+.disc-body details{margin-top:14px}
+.disc-body summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#e9edf5;padding:9px 16px;border:1px solid rgba(233,237,245,.3);border-radius:999px;min-height:40px;box-sizing:border-box}
+.disc-body summary::-webkit-details-marker{display:none}
+.disc-body summary::after{content:"+";color:#ffd23f;font-size:18px;line-height:1}
+.disc-body details[open] summary::after{content:"–"}
+.disc-body summary:hover{border-color:#ffd23f;color:#ffd23f}
+.disc-body ol{margin:16px 0 0;padding-left:26px;columns:2;column-gap:28px;font-size:14px;line-height:1.75;color:#c9d1de}
+.disc-body ol li{break-inside:avoid}
+.disc-body ol li::marker{color:#6f7a90;font-size:12px}
+.disc-body .bonus{list-style:none;margin:6px 0 0 -26px;color:#ff5c8a;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.decade-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border:1px solid rgba(233,237,245,.3);border-radius:999px;color:#e9edf5;font-family:'Anton',Impact,sans-serif;font-size:18px;letter-spacing:.06em}
+.decade-nav a:nth-child(odd):hover{color:#ffd23f;border-color:#ffd23f;text-shadow:0 0 10px rgba(255,210,63,.9)}
+.decade-nav a:nth-child(even):hover{color:#4fb3ff;border-color:#4fb3ff;text-shadow:0 0 10px rgba(79,179,255,.9)}
+@media (max-width:760px){.mhero-text{position:static !important;padding-top:20px !important;padding-bottom:0 !important}.mhero-shade{display:none}}
+@media (max-width:560px){.disc-cover{flex-basis:110px;width:110px;height:110px}.disc-body ol{columns:1}}
+</style>
+</head>
+<body>
+<div style="font-family: 'DM Sans', system-ui, sans-serif; color: #e9edf5; background: #070a17; width: 100%; overflow-x: hidden;">
+
+<!-- Navigation -->
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(7,10,23,.86); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(215,221,229,.12);">
+<nav class="neon" aria-label="Hauptmenü" style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 40px; font-size: 20px;">
+<a href="index.html">Startseite</a>
+<a href="tour.html">Tour</a>
+<a href="index.html#box">Die Box</a>
+<a href="live.html" aria-current="page">Live</a>
+<a href="index.html#band">Band</a>
+<a href="musik.html">Musik</a>
+<a href="index.html#kontakt">Booking</a>
+</nav>
+</header>
+
+<section class="mhero" style="position: relative;">
+<img class="mhero-img" src="bilder/live-titel.jpg" alt="Die Spider Murphy Gang spielt live im Diner – Saxofon, Bass und Gitarre vor Jukebox und roten Sitzbänken" width="1913" height="822" style="display: block; width: 100%; height: auto; aspect-ratio: 21 / 9; object-fit: cover;">
+<div class="mhero-shade" aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,10,23,0) 80%, #070a17 100%);"></div>
+</section>
+<main style="max-width: 1240px; margin: 0 auto; padding: 28px 24px 120px; box-sizing: border-box;">
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: 56px; line-height: 1; color: #4fb3ff; text-shadow: 0 0 6px rgba(79,179,255,.8), 0 0 22px rgba(30,120,255,.55);">Rock'n'Roll ist live!</p>
+<h1 style="margin: 10px 0 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 7vw, 84px); line-height: .95; text-transform: uppercase; color: #ffffff; text-shadow: 0 4px 24px rgba(0,0,0,.6);">Live erleben</h1>
+<p style="margin: 24px 0 48px; max-width: 680px; font-size: 19px; line-height: 1.7; color: #c9d1de;">Video-Mitschnitte von Live-Konzerten der Spider Murphy Gang – und wer mehr sehen will, kommt einfach zum nächsten Konzert!</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+<div class="tile" style="border: 1px solid rgba(215,221,229,.16); border-radius: 18px; overflow: hidden; background: #070a17; color: #e9edf5;">
+<div style="position: relative; aspect-ratio: 16 / 9; background: #0c0f1c; display: flex; align-items: center; justify-content: center;">
+<img src="bilder/video-1.jpg" alt="Trailer zur Jubiläumstour" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<span aria-hidden="true" style="position: absolute; inset: 0; background: rgba(7,10,23,.25);"></span>
+<span aria-hidden="true" style="position: relative; width: 68px; height: 68px; border-radius: 50%; background: #c8102e; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px rgba(200,16,46,.6);">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="#ffffff"><path d="M8 5v14l11-7z"></path></svg>
+</span>
+</div>
+<div style="padding: 18px 20px;">
+<p style="margin: 0; font-weight: 700; font-size: 17px;">Trailer</p>
+<p style="margin: 4px 0 0; font-size: 14px; color: #a9b3c4;">50 Jahre Spider Murphy Gang</p>
+</div>
+</div>
+<div class="tile" style="border: 1px solid rgba(215,221,229,.16); border-radius: 18px; overflow: hidden; background: #070a17; color: #e9edf5;">
+<div style="position: relative; aspect-ratio: 16 / 9; background: #0c0f1c; display: flex; align-items: center; justify-content: center;">
+<img src="bilder/video-2.jpg" alt="Spider Murphy Gang live auf der Bühne" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<span aria-hidden="true" style="position: absolute; inset: 0; background: rgba(7,10,23,.25);"></span>
+<span aria-hidden="true" style="position: relative; width: 68px; height: 68px; border-radius: 50%; background: #c8102e; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px rgba(200,16,46,.6);">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="#ffffff"><path d="M8 5v14l11-7z"></path></svg>
+</span>
+</div>
+<div style="padding: 18px 20px;">
+<p style="margin: 0; font-weight: 700; font-size: 17px;">Live-Mitschnitt</p>
+<p style="margin: 4px 0 0; font-size: 14px; color: #a9b3c4;">Konzert vom 23.07.2010</p>
+</div>
+</div>
+<div class="tile" style="border: 1px solid rgba(215,221,229,.16); border-radius: 18px; overflow: hidden; background: #070a17; color: #e9edf5;">
+<div style="position: relative; aspect-ratio: 16 / 9; background: #0c0f1c; display: flex; align-items: center; justify-content: center;">
+<img src="bilder/video-3.jpg" alt="Donauinselfest Wien bei Nacht" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<span aria-hidden="true" style="position: absolute; inset: 0; background: rgba(7,10,23,.25);"></span>
+<span aria-hidden="true" style="position: relative; width: 68px; height: 68px; border-radius: 50%; background: #c8102e; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px rgba(200,16,46,.6);">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="#ffffff"><path d="M8 5v14l11-7z"></path></svg>
+</span>
+</div>
+<div style="padding: 18px 20px;">
+<p style="margin: 0; font-weight: 700; font-size: 17px;">Donauinselfest Wien</p>
+<p style="margin: 4px 0 0; font-size: 14px; color: #a9b3c4;">Live auf der Donauinsel</p>
+</div>
+</div>
+</div>
+<p style="margin: 56px 0 0;"><a href="tour.html" style="display: inline-flex; align-items: center; gap: 10px; background: #c8102e; color: #ffffff; padding: 15px 26px; border-radius: 999px; font-weight: 700; font-size: 16px;">Zu den Tourdaten</a></p>
+</main>
+
+<!-- Footer -->
+<div aria-hidden="true" style="height: 18px; background: repeating-conic-gradient(#e9edf5 0 25%, #0c0f1c 0 50%) 0 0 / 18px 18px; opacity: .7;"></div>
+<footer style="background: #04060f; padding: 44px 24px 36px;">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px; font-size: 14px; color: #8e98ab;">
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: 30px; color: #ffd23f;">Spider Murphy Gang</p>
+<nav class="neon" aria-label="Rechtliches" style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 16px;">
+<a href="impressum.html">Impressum</a>
+<a href="datenschutz.html">Datenschutz</a>
+<a href="cookies.html">Cookies</a>
+</nav>
+</div>
+<div style="max-width: 1240px; margin: 28px auto 0; padding-top: 22px; border-top: 1px solid rgba(215,221,229,.10); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; font-size: 13px; color: #8e98ab;">
+<p style="margin: 0;">Fotos © Dieter Bichl</p>
+<a href="https://codenovalabs.net" style="display: inline-flex; align-items: center; gap: 12px; color: #8e98ab;" aria-label="Website von CodeNova Labs">
+<span>Website by</span>
+<img src="bilder/codenova-labs.svg" alt="CodeNova Labs" style="height: 38px; width: auto; display: block;">
+</a>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

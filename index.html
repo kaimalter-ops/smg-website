@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Spider Murphy Gang – Website-Entwurf</title>
+<style>
+@font-face{font-family:'Anton';src:url(fonts/anton.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Yellowtail';src:url(fonts/yellowtail.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-500.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-700.woff2) format('woff2');font-weight:700;font-display:swap}
+</style>
+<style>
+body{margin:0;background:#070a17}
+a{color:#ffd23f;text-decoration:none}a:hover{color:#fff3b8}
+.neon a{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.06em;color:#e9edf5;transition:color .2s,text-shadow .2s}
+.neon a:nth-child(odd):hover,.neon a:nth-child(odd):focus-visible{color:#ffd23f;text-shadow:0 0 3px #fff3b8,0 0 10px rgba(255,210,63,1),0 0 22px rgba(255,190,0,.9),0 0 40px rgba(255,170,0,.6)}
+.neon a:nth-child(even):hover,.neon a:nth-child(even):focus-visible{color:#4fb3ff;text-shadow:0 0 3px #d6ecff,0 0 10px rgba(79,179,255,1),0 0 22px rgba(30,140,255,.9),0 0 40px rgba(0,110,255,.6)}
+.neon a[aria-current=page]{color:#ffd23f}
+.btn-red[aria-disabled]:hover{background:#c8102e !important}
+.btn-red:hover{background:#e0213f !important}
+.btn-ghost:hover{border-color:#ffd23f !important;color:#ffd23f !important}
+.row:hover{background:rgba(255,210,63,.06) !important}
+.tile:hover{border-color:rgba(255,210,63,.6) !important}
+@media (max-width:760px){.hero{display:block !important;min-height:0 !important}.hero-img{position:relative !important;height:auto !important;aspect-ratio:16/10}.hero-shade{display:none}.hero-text{padding-top:28px !important}}
+</style>
+</head>
+<body>
+<div style="font-family: 'DM Sans', system-ui, sans-serif; color: #e9edf5; background: #070a17; width: 100%; overflow-x: hidden;">
+
+<!-- Navigation -->
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(7,10,23,.86); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(215,221,229,.12);">
+<nav class="neon" aria-label="Hauptmenü" style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 40px; font-size: 20px;">
+<a href="tour.html">Tour</a>
+<a href="#box">Die Box</a>
+<a href="live.html">Live</a>
+<a href="#band">Band</a>
+<a href="musik.html">Musik</a>
+<a href="#kontakt">Booking</a>
+</nav>
+</header>
+
+<!-- Hero -->
+<section id="top" class="hero" style="position: relative; min-height: 940px; display: flex; align-items: flex-end;">
+<img class="hero-img" src="bilder/titelbild.jpg" alt="Spider Murphy Gang Diner bei Nacht mit Neonschild und altem Tourbus" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%;">
+<div class="hero-shade" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,10,23,0) 62%, rgba(7,10,23,.8) 82%, #070a17 100%);"></div>
+<div class="hero-text" style="position: relative; width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 24px 44px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px;">
+<h1 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(40px, 5.2vw, 72px); line-height: .98; letter-spacing: .01em; text-transform: uppercase; color: #ffffff; max-width: 900px;">Home of bavarian Rock'n'Roll</h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #c9d1de; max-width: 620px;">…mir san a bayrische Band! Die große Jubiläumstour 2027 – unplugged im Lustspielhaus, elektrisch in ganz Deutschland und Österreich, Finale in der Münchner Olympiahalle.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px;">
+<a class="btn-red" href="tour.html" style="background: #c8102e; color: #ffffff; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 16px;">Alle Tourtermine</a>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 2px solid rgba(233,237,245,.5); color: #ffffff; padding: 14px 26px; border-radius: 999px; font-weight: 700; font-size: 16px;">Olympiahalle 30. &amp; 31.10.</a>
+</div>
+</div>
+</section>
+
+<!-- Diner-Karo -->
+<div aria-hidden="true" style="height: 28px; background: repeating-conic-gradient(#e9edf5 0 25%, #0c0f1c 0 50%) 0 0 / 28px 28px; opacity: .9;"></div>
+
+<!-- Tour -->
+<section id="tour" style="padding: 96px 24px; background: radial-gradient(ellipse at 50% 0%, rgba(63,169,255,.14), rgba(7,10,23,0) 60%), #070a17;">
+<div style="max-width: 1040px; margin: 0 auto;">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 36px;">
+<div>
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: 52px; line-height: 1; color: #ffd23f; text-shadow: 0 0 6px rgba(255,210,63,.8), 0 0 22px rgba(255,190,0,.55);">On Tour</p>
+<h2 style="margin: 8px 0 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 44px; text-transform: uppercase; letter-spacing: .01em; color: #ffffff;">50 Jahre Rock'n'Roll – 2027</h2>
+</div>
+<p style="margin: 0; font-size: 15px; color: #a9b3c4;">42 Konzerte · Deutschland, Österreich &amp; Schweiz</p>
+</div>
+
+<div style="border: 1px solid rgba(215,221,229,.18); border-radius: 18px; overflow: hidden; background: rgba(12,16,32,.75);">
+
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10);">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">27.03.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">München</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Lustspielhaus · unplugged</p>
+</div>
+<a class="btn-ghost" href="https://lustspielhaus.de/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10);">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">28.03.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">München</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Lustspielhaus · unplugged</p>
+</div>
+<a class="btn-ghost" href="https://lustspielhaus.de/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10);">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">29.03.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Mo</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">München</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Lustspielhaus · unplugged</p>
+</div>
+<a class="btn-ghost" href="https://lustspielhaus.de/" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10);">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">03.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">Sa</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Landshut</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Sparkassen-Arena</p>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+
+<div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 18px 24px; border-bottom: 1px solid rgba(215,221,229,.10);">
+<div style="display: flex; align-items: baseline; gap: 10px; min-width: 130px;">
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 28px; color: #ffd23f;">04.04.</span>
+<span style="font-size: 14px; color: #a9b3c4; text-transform: uppercase; letter-spacing: .08em;">So</span>
+</div>
+<div style="flex: 1 1 260px; min-width: 0;">
+<p style="margin: 0; font-weight: 700; font-size: 18px; color: #ffffff;">Landshut</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #a9b3c4;">Sparkassen-Arena · Zusatzkonzert</p>
+</div>
+<a class="btn-ghost" href="https://www.eventim.de/artist/spider-murphy-gang/spider-murphy-gang-50-jahre-jubilaeumskonzerte-4132197/?affiliate=GMD" style="border: 1px solid rgba(233,237,245,.35); color: #e9edf5; padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">Tickets</a>
+</div>
+
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 20px 24px; background: linear-gradient(90deg, rgba(200,16,46,.35), rgba(200,16,46,.08));">
+<p style="margin: 0; font-size: 16px; color: #ffffff;"><strong>Großes Finale:</strong> Olympiahalle München, 30. &amp; 31. Oktober 2027</p>
+<a href="tour.html" style="font-weight: 700; font-size: 15px;">Alle 42 Termine ansehen →</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Die Box -->
+<section id="box" style="padding: 40px 24px 96px;">
+<div style="max-width: 1040px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center; border: 1px solid rgba(255,210,63,.35); border-radius: 24px; padding: 48px; background: linear-gradient(135deg, rgba(255,210,63,.10), rgba(63,169,255,.06)); box-sizing: border-box;">
+<div aria-hidden="true" style="position: relative; height: 300px; display: flex; align-items: center; justify-content: center;">
+<div style="position: absolute; width: 260px; height: 260px; border-radius: 50%; background: repeating-radial-gradient(circle, #0c0f1c 0 3px, #161a2b 3px 5px); box-shadow: 0 0 40px rgba(0,0,0,.6); transform: translateX(46px);"></div>
+<div style="position: absolute; width: 84px; height: 84px; border-radius: 50%; background: #c8102e; transform: translateX(46px); display: flex; align-items: center; justify-content: center; font-family: 'Anton', Impact, sans-serif; font-size: 22px; color: #ffd23f;">50</div>
+<div style="position: relative; width: 230px; height: 260px; transform: translateX(-46px); border-radius: 6px; background: #0c0f1c; border: 2px solid #ffd23f; box-shadow: 0 0 18px rgba(255,210,63,.45); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; padding: 16px; box-sizing: border-box;">
+<span style="font-family: 'Yellowtail', cursive; font-size: 34px; color: #ffd23f;">Skandal</span>
+<span style="font-family: 'Anton', Impact, sans-serif; font-size: 20px; color: #ffffff; letter-spacing: .06em;">13 CD BOX</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<p style="margin: 0; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #4fb3ff;">Erscheint am 2. April 2027</p>
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 44px; line-height: 1.05; text-transform: uppercase; color: #ffffff;">50 Jahre Skandal – Die Box</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #c9d1de;">Das komplette musikalische Lebenswerk auf 13 CDs: alle zwölf Studioalben plus zwei brandneue Singles. Limitiert auf 1.500 Exemplare.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px;">
+<a class="btn-red" href="http://www.tixx-and-shirts.com/index.php?manufacturers_id=11" style="background: #c8102e; color: #ffffff; padding: 14px 24px; border-radius: 999px; font-weight: 700; font-size: 15px;">Zum Shop</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Rosi packt aus -->
+<section id="rosi" style="padding: 24px 24px 104px;">
+<div style="max-width: 1040px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center;">
+<img src="bilder/rosi.jpg" alt="Rosi lehnt im Pelzschal am alten Tourbus vor dem Spider Murphy Gang Diner" loading="lazy" style="width: 100%; max-width: 440px; justify-self: center; height: auto; display: block; border-radius: 20px; box-shadow: 0 0 0 1px rgba(255,210,63,.25), 0 24px 70px rgba(0,0,0,.6);">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<p style="margin: 0; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #ff5c8a;">Exklusiv</p>
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(48px, 6vw, 76px); line-height: .95; text-transform: uppercase; color: #ffffff;">Rosi packt aus</h2>
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: clamp(30px, 3.4vw, 40px); line-height: 1.15; color: #ffd23f; text-shadow: 0 0 6px rgba(255,210,63,.8), 0 0 22px rgba(255,190,0,.55);">50 Jahre des Schweigens sind vorbei</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #c9d1de;">Nach einem halben Jahrhundert ist auch Rosi wieder zurück auf der dunklen Bühne der Münchener Gassen und plaudert die Geheimnisse der Band aus. All das und Geschichten von der Band findet ihr in unserem Blog.</p>
+<div style="margin-top: 6px;">
+<a class="btn-red" href="blog.html" style="display: inline-flex; align-items: center; gap: 10px; background: #c8102e; color: #ffffff; padding: 15px 26px; border-radius: 999px; font-weight: 700; font-size: 16px;">Zum Blog</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Live-Videos -->
+<section id="videos" style="padding: 96px 24px; background: #0b0f20; border-top: 1px solid rgba(215,221,229,.08); border-bottom: 1px solid rgba(215,221,229,.08);">
+<div style="max-width: 1240px; margin: 0 auto;">
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: 52px; line-height: 1; color: #4fb3ff; text-shadow: 0 0 6px rgba(79,179,255,.8), 0 0 22px rgba(30,120,255,.55);">Rock'n'Roll ist live!</p>
+<p style="margin: 14px 0 40px; font-size: 17px; color: #c9d1de; max-width: 640px;">Video-Mitschnitte von Live-Konzerten – und wer mehr sehen will, kommt einfach zum nächsten Konzert!</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+
+<a class="tile" href="https://spider-murphy-gang.de/resources/TRAILER_SMG_sm.mp4" style="display: block; border: 1px solid rgba(215,221,229,.16); border-radius: 18px; overflow: hidden; background: #070a17; color: #e9edf5;">
+<div style="position: relative; aspect-ratio: 16 / 9; background: #0c0f1c; display: flex; align-items: center; justify-content: center;">
+<img src="bilder/video-1.jpg" alt="Trailer zur Jubiläumstour" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<span aria-hidden="true" style="position: absolute; inset: 0; background: rgba(7,10,23,.25);"></span>
+<span style="position: relative; width: 68px; height: 68px; border-radius: 50%; background: #c8102e; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px rgba(200,16,46,.6);">
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="#ffffff"><path d="M8 5v14l11-7z"></path></svg>
+</span>
+</div>
+<div style="padding: 18px 20px;">
+<p style="margin: 0; font-weight: 700; font-size: 17px;">Trailer</p>
+<p style="margin: 4px 0 0; font-size: 14px; color: #a9b3c4;">50 Jahre Spider Murphy Gang</p>
+</div>
+</a>
+
+<a class="tile" href="https://spider-murphy-gang.de/resources/SMG-live-23072010.mp4" style="display: block; border: 1px solid rgba(215,221,229,.16); border-radius: 18px; overflow: hidden; background: #070a17; color: #e9edf5;">
+<div style="position: relative; aspect-ratio: 16 / 9; background: #0c0f1c; display: flex; align-items: center; justify-content: center;">
+<img src="bilder/video-2.jpg" alt="Spider Murphy Gang live auf der Bühne" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<span aria-hidden="true" style="position: absolute; inset: 0; background: rgba(7,10,23,.25);"></span>
+<span style="position: relative; width: 68px; height: 68px; border-radius: 50%; background: #c8102e; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px rgba(200,16,46,.6);">
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="#ffffff"><path d="M8 5v14l11-7z"></path></svg>
+</span>
+</div>
+<div style="padding: 18px 20px;">
+<p style="margin: 0; font-weight: 700; font-size: 17px;">Live-Mitschnitt</p>
+<p style="margin: 4px 0 0; font-size: 14px; color: #a9b3c4;">Konzert vom 23.07.2010</p>
+</div>
+</a>
+
+<a class="tile" href="https://spider-murphy-gang.de/resources/SMG-Donauinselfest.mp4" style="display: block; border: 1px solid rgba(215,221,229,.16); border-radius: 18px; overflow: hidden; background: #070a17; color: #e9edf5;">
+<div style="position: relative; aspect-ratio: 16 / 9; background: #0c0f1c; display: flex; align-items: center; justify-content: center;">
+<img src="bilder/video-3.jpg" alt="Donauinselfest Wien bei Nacht" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<span aria-hidden="true" style="position: absolute; inset: 0; background: rgba(7,10,23,.25);"></span>
+<span style="position: relative; width: 68px; height: 68px; border-radius: 50%; background: #c8102e; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px rgba(200,16,46,.6);">
+<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="#ffffff"><path d="M8 5v14l11-7z"></path></svg>
+</span>
+</div>
+<div style="padding: 18px 20px;">
+<p style="margin: 0; font-weight: 700; font-size: 17px;">Donauinselfest Wien</p>
+<p style="margin: 4px 0 0; font-size: 14px; color: #a9b3c4;">Live auf der Donauinsel</p>
+</div>
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- Band -->
+<section id="band" style="padding: 96px 24px;">
+<div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center;">
+<img src="bilder/band.jpg" alt="Die Spider Murphy Gang im Aufzug" style="width: 100%; height: auto; display: block; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,.55);">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: 52px; line-height: 1; color: #ffd23f; text-shadow: 0 0 6px rgba(255,210,63,.8), 0 0 22px rgba(255,190,0,.55);">Pfüati Gott,</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #c9d1de;">auch wenn Ihr nicht Elisabeth oder Adelgund heisst … willkommen bei der Spider Murphy Gang, dem home of bavarian Rock'n Roll! Schaut's Euch um, hört's zua, lest's Euch all's durch – habt's einfach Spass!</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #c9d1de;">Und wenn Ihr Lust auf an guadn oidn Rock'n Roll habt's – na, dann kommt einfach zum nächsten Konzert! Mir sehn uns!</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px;">
+<a class="btn-ghost" href="https://spider-murphy-gang.de/die_band.php" style="border: 2px solid rgba(233,237,245,.4); color: #ffffff; padding: 13px 24px; border-radius: 999px; font-weight: 700; font-size: 15px;">Die Band &amp; Geschichte</a>
+<a class="btn-ghost" href="https://spider-murphy-gang.de/fotos/" style="border: 2px solid rgba(233,237,245,.4); color: #ffffff; padding: 13px 24px; border-radius: 999px; font-weight: 700; font-size: 15px;">Fotos</a>
+<a class="btn-ghost" href="https://spider-murphy-gang.de/unplugged.php" style="border: 2px solid rgba(233,237,245,.4); color: #ffffff; padding: 13px 24px; border-radius: 999px; font-weight: 700; font-size: 15px;">Unplugged</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Musik -->
+<section id="musik" style="padding: 96px 24px; background: linear-gradient(180deg, #070a17, #12060b);">
+<div style="max-width: 1240px; margin: 0 auto;">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 36px;">
+<div>
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 44px; text-transform: uppercase; color: #ffffff;">Diskografie</h2>
+<p style="margin: 8px 0 0; font-size: 17px; color: #c9d1de;">Von „Rock'n'Roll Schuah“ bis „Skandal im Sperrbezirk“</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px;">
+<a class="btn-ghost" href="musik.html" style="border: 2px solid rgba(233,237,245,.4); color: #ffffff; padding: 13px 24px; border-radius: 999px; font-weight: 700; font-size: 15px;">Alle Alben &amp; Songs</a>
+<a class="btn-ghost" href="http://phobos.apple.com/WebObjects/MZSearch.woa/wa/search?partnerId=2003&amp;term=spider+murphy+gang" style="border: 2px solid rgba(233,237,245,.4); color: #ffffff; padding: 13px 24px; border-radius: 999px; font-weight: 700; font-size: 15px;">iTunes</a>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 20px;">
+
+<a class="tile" href="musik.html#album-30-jahre-rock-n-roll" style="display: block; aspect-ratio: 1 / 1; border-radius: 10px; overflow: hidden; border: 1px solid rgba(215,221,229,.14); background: #0c0f1c;"><img src="bilder/album-1.jpg" alt="Albumcover „30 Jahre Rock'n'Roll – Alle Singles“" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></a>
+
+<a class="tile" href="musik.html#album-die-hits-der-80er" style="display: block; aspect-ratio: 1 / 1; border-radius: 10px; overflow: hidden; border: 1px solid rgba(215,221,229,.14); background: #0c0f1c;"><img src="bilder/album-2.jpg" alt="Albumcover Spider Murphy Gang" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></a>
+
+<a class="tile" href="musik.html#album-the-essential" style="display: block; aspect-ratio: 1 / 1; border-radius: 10px; overflow: hidden; border: 1px solid rgba(215,221,229,.14); background: #0c0f1c;"><img src="bilder/album-3.jpg" alt="Albumcover Spider Murphy Gang" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></a>
+
+<a class="tile" href="musik.html#album-zeitreise-70-hits-aus-25-jahren" style="display: block; aspect-ratio: 1 / 1; border-radius: 10px; overflow: hidden; border: 1px solid rgba(215,221,229,.14); background: #0c0f1c;"><img src="bilder/album-4.jpg" alt="Albumcover „Zeitreise“" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></a>
+
+<a class="tile" href="musik.html#album-radio-hitz" style="display: block; aspect-ratio: 1 / 1; border-radius: 10px; overflow: hidden; border: 1px solid rgba(215,221,229,.14); background: #0c0f1c;"><img src="bilder/album-5.jpg" alt="Albumcover „Radio Hitz“" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></a>
+
+<a class="tile" href="musik.html#album-ihre-hits" style="display: block; aspect-ratio: 1 / 1; border-radius: 10px; overflow: hidden; border: 1px solid rgba(215,221,229,.14); background: #0c0f1c;"><img src="bilder/album-6.jpg" alt="Albumcover Spider Murphy Gang" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></a>
+
+</div>
+</div>
+</section>
+
+<!-- Booking & Kontakt -->
+<section id="kontakt" style="padding: 96px 24px;">
+<div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+<div style="grid-column: 1 / -1; margin-bottom: 12px;">
+<h2 style="margin: 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 44px; text-transform: uppercase; color: #ffffff;">Booking &amp; Kontakt</h2>
+</div>
+<a class="tile" href="https://spider-murphy-gang.de/booking/" style="display: flex; flex-direction: column; gap: 8px; padding: 28px; border-radius: 18px; border: 1px solid rgba(215,221,229,.16); background: #0b0f20; color: #e9edf5;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #4fb3ff;">Für Veranstalter</span>
+<span style="font-size: 22px; font-weight: 700;">Booking</span>
+<span style="font-size: 15px; color: #a9b3c4;">Die Spider Murphy Gang für Ihr Event anfragen.</span>
+</a>
+<a class="tile" href="mailto:thuernau@crocodile-music.de?subject=Anfrage%20Spider%20Murphy%20Gang" style="display: flex; flex-direction: column; gap: 8px; padding: 28px; border-radius: 18px; border: 1px solid rgba(215,221,229,.16); background: #0b0f20; color: #e9edf5;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #4fb3ff;">Management</span>
+<span style="font-size: 22px; font-weight: 700;">Crocodile Music</span>
+<span style="font-size: 15px; color: #a9b3c4;">Gräfelfing · thuernau@crocodile-music.de</span>
+</a>
+<a class="tile" href="https://spider-murphy-gang.de/resources/FOTOS/SMG-Pressekit.zip" style="display: flex; flex-direction: column; gap: 8px; padding: 28px; border-radius: 18px; border: 1px solid rgba(215,221,229,.16); background: #0b0f20; color: #e9edf5;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #4fb3ff;">Presse</span>
+<span style="font-size: 22px; font-weight: 700;">Pressekit</span>
+<span style="font-size: 15px; color: #a9b3c4;">Fotos &amp; Infos zum Download.</span>
+</a>
+<a class="tile" href="https://spider-murphy-gang.de/gaestebuch/" style="display: flex; flex-direction: column; gap: 8px; padding: 28px; border-radius: 18px; border: 1px solid rgba(215,221,229,.16); background: #0b0f20; color: #e9edf5;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #4fb3ff;">Fans</span>
+<span style="font-size: 22px; font-weight: 700;">Gästebuch</span>
+<span style="font-size: 15px; color: #a9b3c4;">Grüße an die Band.</span>
+</a>
+</div>
+</section>
+
+<!-- Footer -->
+<div aria-hidden="true" style="height: 18px; background: repeating-conic-gradient(#e9edf5 0 25%, #0c0f1c 0 50%) 0 0 / 18px 18px; opacity: .7;"></div>
+<footer style="background: #04060f; padding: 44px 24px 36px;">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px; font-size: 14px; color: #8e98ab;">
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: 30px; color: #ffd23f;">Spider Murphy Gang</p>
+<nav class="neon" aria-label="Rechtliches" style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 16px;">
+<a href="impressum.html">Impressum</a>
+<a href="datenschutz.html">Datenschutz</a>
+<a href="cookies.html">Cookies</a>
+</nav>
+</div>
+<div style="max-width: 1240px; margin: 28px auto 0; padding-top: 22px; border-top: 1px solid rgba(215,221,229,.10); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; font-size: 13px; color: #8e98ab;">
+<p style="margin: 0;">Fotos © Dieter Bichl</p>
+<a href="https://codenovalabs.net" style="display: inline-flex; align-items: center; gap: 12px; color: #8e98ab;" aria-label="Website von CodeNova Labs">
+<span>Website by</span>
+<img src="bilder/codenova-labs.svg" alt="CodeNova Labs" style="height: 38px; width: auto; display: block;">
+</a>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

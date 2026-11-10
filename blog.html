@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Blog – Spider Murphy Gang</title>
+<style>
+@font-face{font-family:'Anton';src:url(fonts/anton.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Yellowtail';src:url(fonts/yellowtail.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-500.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-700.woff2) format('woff2');font-weight:700;font-display:swap}
+</style>
+<style>
+body{margin:0;background:#070a17}
+a{color:#ffd23f;text-decoration:none}a:hover{color:#fff3b8}
+.neon a{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.06em;color:#e9edf5;transition:color .2s,text-shadow .2s}
+.neon a:nth-child(odd):hover,.neon a:nth-child(odd):focus-visible{color:#ffd23f;text-shadow:0 0 3px #fff3b8,0 0 10px rgba(255,210,63,1),0 0 22px rgba(255,190,0,.9),0 0 40px rgba(255,170,0,.6)}
+.neon a:nth-child(even):hover,.neon a:nth-child(even):focus-visible{color:#4fb3ff;text-shadow:0 0 3px #d6ecff,0 0 10px rgba(79,179,255,1),0 0 22px rgba(30,140,255,.9),0 0 40px rgba(0,110,255,.6)}
+.neon a[aria-current=page]{color:#ffd23f}
+.btn-red[aria-disabled]:hover{background:#c8102e !important}
+.btn-red:hover{background:#e0213f !important}
+.btn-ghost:hover{border-color:#ffd23f !important;color:#ffd23f !important}
+.row:hover{background:rgba(255,210,63,.06) !important}
+.tile:hover{border-color:rgba(255,210,63,.6) !important}
+@media (max-width:760px){.hero{display:block !important;min-height:0 !important}.hero-img{position:relative !important;height:auto !important;aspect-ratio:16/10}.hero-shade{display:none}.hero-text{padding-top:28px !important}}
+</style>
+<style>
+.legal h1{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(38px,6vw,60px);line-height:1;margin:0 0 32px;color:#fff;letter-spacing:.01em;hyphens:auto}
+.legal h2{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:28px;margin:48px 0 14px;color:#ffd23f;letter-spacing:.02em}
+.legal h3{font-size:20px;margin:30px 0 10px;color:#fff}
+.legal h4{font-size:17px;margin:22px 0 8px;color:#e9edf5}
+.legal p,.legal li{font-size:16px;line-height:1.7;color:#c9d1de}
+.legal p{margin:0 0 14px}
+.legal ul{margin:0 0 14px;padding-left:22px}
+.legal a{color:#4fb3ff;text-decoration:underline;word-break:break-word}
+.legal a:hover{color:#9ed3ff}
+</style>
+<style>
+.disc-card{display:flex;flex-wrap:wrap;gap:22px;padding:22px;border:1px solid rgba(215,221,229,.14);border-radius:18px;background:#0b0f20;scroll-margin-top:96px;transition:border-color .2s}
+.disc-card:target,.disc-card:hover{border-color:rgba(255,210,63,.55)}
+.disc-cover{flex:0 0 150px;width:150px;height:150px;border-radius:10px;object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.disc-body{flex:1 1 220px;min-width:0}
+.disc-body h3{margin:0;font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:24px;line-height:1.1;text-transform:uppercase;color:#fff;letter-spacing:.01em}
+.disc-meta{margin:8px 0 0;font-size:14px;color:#ffd23f}
+.disc-meta span{color:#a9b3c4}
+.disc-body details{margin-top:14px}
+.disc-body summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#e9edf5;padding:9px 16px;border:1px solid rgba(233,237,245,.3);border-radius:999px;min-height:40px;box-sizing:border-box}
+.disc-body summary::-webkit-details-marker{display:none}
+.disc-body summary::after{content:"+";color:#ffd23f;font-size:18px;line-height:1}
+.disc-body details[open] summary::after{content:"–"}
+.disc-body summary:hover{border-color:#ffd23f;color:#ffd23f}
+.disc-body ol{margin:16px 0 0;padding-left:26px;columns:2;column-gap:28px;font-size:14px;line-height:1.75;color:#c9d1de}
+.disc-body ol li{break-inside:avoid}
+.disc-body ol li::marker{color:#6f7a90;font-size:12px}
+.disc-body .bonus{list-style:none;margin:6px 0 0 -26px;color:#ff5c8a;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.decade-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border:1px solid rgba(233,237,245,.3);border-radius:999px;color:#e9edf5;font-family:'Anton',Impact,sans-serif;font-size:18px;letter-spacing:.06em}
+.decade-nav a:nth-child(odd):hover{color:#ffd23f;border-color:#ffd23f;text-shadow:0 0 10px rgba(255,210,63,.9)}
+.decade-nav a:nth-child(even):hover{color:#4fb3ff;border-color:#4fb3ff;text-shadow:0 0 10px rgba(79,179,255,.9)}
+@media (max-width:760px){.mhero-text{position:static !important;padding-top:20px !important;padding-bottom:0 !important}.mhero-shade{display:none}}
+@media (max-width:560px){.disc-cover{flex-basis:110px;width:110px;height:110px}.disc-body ol{columns:1}}
+</style>
+<style>
+/* CodeNova Blog im SMG-Look */
+.cnb{--cnb-gap:36px;margin-top:48px;font-family:'DM Sans',sans-serif;color:#c9d1de}
+.cnb-card-img{border-radius:14px;transition:box-shadow .25s,transform .25s}
+.cnb-card:hover .cnb-card-img,.cnb-card:focus-visible .cnb-card-img{box-shadow:0 0 0 2px #ffd23f,0 0 28px rgba(255,190,0,.45);transform:translateY(-2px)}
+.cnb-meta{color:#ffd23f;font-weight:500;letter-spacing:.02em;opacity:1}
+.cnb-card-title,.cnb-post-title{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;color:#fff;letter-spacing:.01em}
+.cnb-card-title{font-size:30px;line-height:1.05}
+.cnb-excerpt,.cnb-lead{color:#c9d1de;opacity:1}
+.cnb-more{color:#ffd23f}
+.cnb-cats{gap:10px}.cnb-cat,.cnb-loadmore{min-height:44px;padding:0 20px;border:1px solid rgba(233,237,245,.3);color:#e9edf5;font-family:'Anton',Impact,sans-serif;font-size:18px;letter-spacing:.06em;opacity:1}
+.cnb-cat[aria-current],.cnb-cat:hover,.cnb-loadmore:hover{border-color:#ffd23f;color:#ffd23f;font-weight:400}
+.cnb-back{color:#ffd23f;opacity:1;font-weight:500}
+.cnb-post-title{font-size:clamp(44px,7vw,80px);line-height:.95}
+.cnb-cover{border-radius:16px}
+.cnb-body{font-size:19px;line-height:1.75;color:#c9d1de}
+.cnb-body h2{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:34px;line-height:1.05;color:#ffd23f;letter-spacing:.02em;margin-top:1.6em}
+.cnb-body h3{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:26px;color:#fff;margin-top:1.4em}
+.cnb-body strong{color:#fff}.cnb-body a{color:#ffd23f}
+.cnb-body blockquote{border-left-color:#ffd23f;font-family:'Yellowtail',cursive;font-style:normal;font-size:1.6em;line-height:1.3;color:#ffd23f}
+.cnb-author{border-top-color:rgba(233,237,245,.15)}.cnb-author strong{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:22px;color:#fff;letter-spacing:.02em}
+.cnb-empty{text-align:left;font-size:19px;line-height:1.7;max-width:680px;padding:0}
+/* Einzelartikel: Seitenkopf ausblenden, der Artikel hat eigenen Titel */
+body:has(.cnb-post) .blog-head{display:none}
+body:has(.cnb-post) .blog-main{padding-top:8px}
+</style></head>
+<body>
+<div style="font-family: 'DM Sans', system-ui, sans-serif; color: #e9edf5; background: #070a17; width: 100%; overflow-x: hidden;">
+
+<!-- Navigation -->
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(7,10,23,.86); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(215,221,229,.12);">
+<nav class="neon" aria-label="Hauptmenü" style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 40px; font-size: 20px;">
+<a href="index.html">Startseite</a>
+<a href="tour.html">Tour</a>
+<a href="index.html#box">Die Box</a>
+<a href="live.html">Live</a>
+<a href="index.html#band">Band</a>
+<a href="musik.html">Musik</a>
+<a href="index.html#kontakt">Booking</a>
+</nav>
+</header>
+
+<section class="mhero" style="position: relative;">
+<img class="mhero-img" src="bilder/blog-titel.jpg" alt="Rosi sitzt rauchend am Diner-Tisch und schreibt in ihr Notizbuch" width="1914" height="822" style="display: block; width: 100%; height: auto; aspect-ratio: 21 / 9; object-fit: cover;">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,10,23,0) 80%, #070a17 100%);"></div>
+</section>
+<main class="blog-main" style="max-width: 1040px; margin: 0 auto; padding: 28px 24px 120px; min-height: 30vh;">
+<div class="blog-head">
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: 56px; line-height: 1; color: #ffd23f; text-shadow: 0 0 6px rgba(255,210,63,.8), 0 0 22px rgba(255,190,0,.55);">Blog</p>
+<h1 style="margin: 10px 0 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 7vw, 84px); line-height: .95; text-transform: uppercase; color: #ffffff;">Rosi packt aus</h1>
+</div>
+<div id="codenova-blog" data-blog="spider-murphy-gang" data-anzahl="9" data-leer="Hier entsteht Rosis Blog und der Blog der Band. Schon bald plaudert Rosi an dieser Stelle aus dem Nähkästchen – und die Spider Murphy Gang erzählt ihre Geschichten aus 50 Jahren Rock'n'Roll."></div>
+<script src="https://blog.codenovalabs.net/embed.js" defer></script>
+</main>
+
+<!-- Footer -->
+<div aria-hidden="true" style="height: 18px; background: repeating-conic-gradient(#e9edf5 0 25%, #0c0f1c 0 50%) 0 0 / 18px 18px; opacity: .7;"></div>
+<footer style="background: #04060f; padding: 44px 24px 36px;">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px; font-size: 14px; color: #8e98ab;">
+<p style="margin: 0; font-family: 'Yellowtail', cursive; font-size: 30px; color: #ffd23f;">Spider Murphy Gang</p>
+<nav class="neon" aria-label="Rechtliches" style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 16px;">
+<a href="impressum.html">Impressum</a>
+<a href="datenschutz.html">Datenschutz</a>
+<a href="cookies.html">Cookies</a>
+</nav>
+</div>
+<div style="max-width: 1240px; margin: 28px auto 0; padding-top: 22px; border-top: 1px solid rgba(215,221,229,.10); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; font-size: 13px; color: #8e98ab;">
+<p style="margin: 0;">Fotos © Dieter Bichl</p>
+<a href="https://codenovalabs.net" style="display: inline-flex; align-items: center; gap: 12px; color: #8e98ab;" aria-label="Website von CodeNova Labs">
+<span>Website by</span>
+<img src="bilder/codenova-labs.svg" alt="CodeNova Labs" style="height: 38px; width: auto; display: block;">
+</a>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
