@@ -2,7 +2,7 @@
 
 Statische Website der Spider Murphy Gang, gebaut von CodeNova Labs. Der Blog kommt über das Einbettungs-Skript von CodeNova Blog (`https://blog.codenovalabs.net/embed.js`, siehe `blog.html`).
 
-- Hosting: Vercel, Team „myinsta“, Projekt `smg-website`. Kein Build-Schritt, die Dateien werden direkt ausgeliefert.
+- Hosting: Vercel, Team „myinsta“, Projekt `smg-website`, verbunden mit GitHub `kaimalter-ops/smg-website`. Push auf `main` = live, andere Branches = Vorschau. Kein Build-Schritt.
 - Bisher lag die Demo auf Alfahosting unter `spidermurphygang.ubxplanner.com`. Stand dieses Repos = Live-Stand dort am 10.11.2026.
 
 ## Später: Domain des Kunden umstellen
