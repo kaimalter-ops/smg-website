@@ -19,6 +19,8 @@ a{color:#ffd23f;text-decoration:none}a:hover{color:#fff3b8}
 .neon a:nth-child(odd):hover,.neon a:nth-child(odd):focus-visible{color:#ffd23f;text-shadow:0 0 3px #fff3b8,0 0 10px rgba(255,210,63,1),0 0 22px rgba(255,190,0,.9),0 0 40px rgba(255,170,0,.6)}
 .neon a:nth-child(even):hover,.neon a:nth-child(even):focus-visible{color:#4fb3ff;text-shadow:0 0 3px #d6ecff,0 0 10px rgba(79,179,255,1),0 0 22px rgba(30,140,255,.9),0 0 40px rgba(0,110,255,.6)}
 .neon a[aria-current=page]{color:#ffd23f}
+.nav-bar{display:none}
+@media (max-width:760px){.nav-bar{display:flex;align-items:center;justify-content:space-between;max-width:1240px;margin:0 auto;padding:12px 20px;box-sizing:border-box}.nav-brand{white-space:nowrap;font-family:'Yellowtail',cursive;font-size:26px;line-height:1;color:#ffd23f !important;text-shadow:0 0 6px rgba(255,210,63,.6)}.nav-toggle{display:inline-flex;align-items:center;gap:10px;background:none;border:1px solid rgba(233,237,245,.35);border-radius:999px;padding:9px 16px;color:#e9edf5;font-family:'Anton',Impact,sans-serif;font-size:16px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.nav-toggle:hover,.nav-toggle:focus-visible{border-color:#ffd23f;color:#ffd23f}.nav-icon,.nav-icon::before,.nav-icon::after{display:block;width:18px;height:2px;background:currentColor;border-radius:2px;transition:transform .2s,background .2s}.nav-icon{position:relative}.nav-icon::before,.nav-icon::after{content:"";position:absolute;left:0}.nav-icon::before{top:-6px}.nav-icon::after{top:6px}.nav-open .nav-icon{background:transparent}.nav-open .nav-icon::before{transform:translateY(6px) rotate(45deg)}.nav-open .nav-icon::after{transform:translateY(-6px) rotate(-45deg)}#hauptmenue{display:none !important;flex-direction:column;align-items:stretch !important;gap:0 !important;padding:4px 20px 16px !important;font-size:22px !important}#hauptmenue a{padding:12px 4px;border-top:1px solid rgba(215,221,229,.10)}.nav-open #hauptmenue{display:flex !important}}
 .btn-red[aria-disabled]:hover{background:#c8102e !important}
 .btn-red:hover{background:#e0213f !important}
 .btn-ghost:hover{border-color:#ffd23f !important;color:#ffd23f !important}
@@ -92,7 +94,11 @@ body:has(.cnb-post) .blog-main{padding-top:8px}
 
 <!-- Navigation -->
 <header style="position: sticky; top: 0; z-index: 10; background: rgba(7,10,23,.86); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(215,221,229,.12);">
-<nav class="neon" aria-label="Hauptmenü" style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 40px; font-size: 20px;">
+<div class="nav-bar">
+<a class="nav-brand" href="index.html">Spider Murphy Gang</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hauptmenue"><span class="nav-icon" aria-hidden="true"></span><span class="nav-label">Menü</span></button>
+</div>
+<nav id="hauptmenue" class="neon" aria-label="Hauptmenü" style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 40px; font-size: 20px;">
 <a href="index.html">Startseite</a>
 <a href="tour.html">Tour</a>
 <a href="index.html#box">Die Box</a>
@@ -101,6 +107,7 @@ body:has(.cnb-post) .blog-main{padding-top:8px}
 <a href="index.html#band">Band</a>
 <a href="musik.html">Musik</a>
 <a href="booking.html">Booking</a>
+<a href="kontakt.html">Kontakt</a>
 </nav>
 </header>
 
@@ -138,5 +145,12 @@ body:has(.cnb-post) .blog-main{padding-top:8px}
 </footer>
 
 </div>
+<script>
+(function(){var h=document.querySelector('header'),b=h&&h.querySelector('.nav-toggle');if(!b)return;
+function set(o){h.classList.toggle('nav-open',o);b.setAttribute('aria-expanded',o);}
+b.addEventListener('click',function(){set(!h.classList.contains('nav-open'))});
+h.querySelectorAll('#hauptmenue a').forEach(function(a){a.addEventListener('click',function(){set(false)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&h.classList.contains('nav-open')){set(false);b.focus()}});})();
+</script>
 </body>
 </html>
