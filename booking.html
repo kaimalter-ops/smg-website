@@ -31,6 +31,8 @@ a{color:#ffd23f;text-decoration:none}a:hover{color:#fff3b8}
 </style>
 <style>
 @media (max-width:760px){.mhero-shade{display:none}}
+.k-grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:48px;align-items:start}
+@media (max-width:860px){.k-grid{grid-template-columns:minmax(0,1fr);gap:32px}}
 .dl-icon{flex:0 0 auto;width:52px;height:64px;border-radius:8px;background:#c8102e;color:#fff;display:flex;align-items:flex-end;justify-content:center;padding-bottom:9px;box-sizing:border-box;font-size:13px;font-weight:700;letter-spacing:.08em}
 .dl-go{flex:0 0 auto;font-weight:700;font-size:15px;color:#ffd23f}
 @media (max-width:520px){.dl-go{display:none}}
@@ -67,17 +69,22 @@ a{color:#ffd23f;text-decoration:none}a:hover{color:#fff3b8}
 <h1 style="margin: 10px 0 0; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 7vw, 84px); line-height: .95; text-transform: uppercase; color: #ffffff; text-shadow: 0 4px 24px rgba(0,0,0,.6);">Booking</h1>
 </div>
 <main style="max-width: 1040px; margin: 0 auto; padding: 32px 24px 104px;">
-<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #c9d1de; max-width: 640px;">Wenn Ihr die Spider Murphy Gang buchen wollt, wendet Euch bitte an unsere Konzertagentur.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #c9d1de; max-width: 640px;">Wenn Ihr die Spider Murphy Gang buchen wollt, schickt uns Eure Anfrage einfach über das Formular.</p>
 
-<div style="margin-top: 40px; display: grid; grid-template-columns: minmax(0, 560px); gap: 20px;">
+<div class="k-grid" style="margin-top: 40px;">
+<div id="anfrage" style="min-width: 0;">
+<div data-codenova-form="booking-anfrage" data-blog="spider-murphy-gang"></div>
+<script src="https://blog.codenovalabs.net/embed.js" defer></script>
+</div>
+<aside>
 <div style="display: flex; flex-direction: column; gap: 8px; padding: 28px; border-radius: 18px; border: 1px solid rgba(215,221,229,.16); background: #0b0f20; color: #e9edf5;">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #4fb3ff;">Konzertagentur</span>
 <span style="font-size: 22px; font-weight: 700;">Hello Concerts GmbH</span>
 <span style="font-size: 16px; line-height: 1.6; color: #c9d1de;">Philippine-Welser-Straße 6<br>86150 Augsburg</span>
 <span style="font-size: 16px; line-height: 1.6; color: #c9d1de;">Tel. <a href="tel:+49821154027">0821 154027</a><br>Fax 0821 154020</span>
-<span style="font-size: 16px; line-height: 1.6; overflow-wrap: anywhere;"><a href="mailto:booking@helloconcerts.de?subject=Booking%20Spider%20Murphy%20Gang">booking@helloconcerts.de</a><br><a href="https://www.helloconcerts.de">www.helloconcerts.de</a></span>
-<a class="btn-red" href="mailto:booking@helloconcerts.de?subject=Booking%20Spider%20Murphy%20Gang" style="align-self: flex-start; margin-top: 10px; background: #c8102e; color: #ffffff; padding: 14px 24px; border-radius: 999px; font-weight: 700; font-size: 16px;">Booking anfragen</a>
+<span style="font-size: 16px; line-height: 1.6; overflow-wrap: anywhere;"><a href="https://www.helloconcerts.de">www.helloconcerts.de</a></span>
 </div>
+</aside>
 </div>
 
 <h2 style="margin: 72px 0 8px; font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: 36px; text-transform: uppercase; letter-spacing: .01em; color: #ffffff;">Downloads für Veranstalter</h2>
